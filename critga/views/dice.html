@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Dice</title>
+</head>
+<body>
+    <div id="diceEl">
+        <h2>Roll the dice</h2>
+        <button data-bind="click: rollDice">Roll</button><br/>
+        <div>
+            <span data-bind="text: diceResult"></span>
+        </div>
+    </div>
+</body>
+<script src="dice.js"></script>
+
+<script>
+    $(function () {
+        setTimeout(function () {
+            var el = $("#diceEl"); // matches id="diceEl" above        
+            var vm = new DiceVM();
+            ko.applyBindings(vm, el[0]); // this line links the vm (ViewModel) to the element 
+        }, 15)                
+    });
+</script>
+</html>

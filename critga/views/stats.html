@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>stats 1</title>
+</head>
+<body>
+    <div id="statsPlayerEl">
+        <table>
+            <tr data-bind="foreach: childData">
+                <td>
+                    <h2 data-bind="text: playername1"></h2>
+                    <table>
+                        <tr>
+                            <td> Player Name: </td>
+                            <td>
+                                <input type="text" data-bind="value: playername1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Hit Points:</td>
+                            <td>
+                                <input type="number" data-bind="value: HP1"/>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td>Attack Points:</td>
+                            <td>
+                                <input type="number" data-bind="value: ATK1"/>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td>Defense Points:</td>
+                            <td>
+                                <input type="number" data-bind="value: DEF1"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Accuracy Roll:</td>
+                            <td>
+                                <input type="number" data-bind="value: ACC1"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Evasion Roll:</td>
+                            <td>
+                                <input type="number" data-bind="value: EVA1"/>
+                            </td>
+                        </tr>                         
+                        <tr>
+                            <td>Speed:</td>
+                            <td>
+                                <input type="number" data-bind="value: SPD1"/>
+                            </td>
+                        </tr>                         
+                        <tr>
+                            <td>Turn:</td>
+                            <td data-bind="text: TurnOrder">
+                                
+                            </td>
+                        </tr>                         
+                        <tr>
+                            <td>
+                                <button data-bind="click: resetData">Reset</button>
+                            </td>
+                            <td><nobr>                   
+                                <button data-bind="click: add">Add</button>               
+                                <button data-bind="click: removeItem">Remove</button>
+                            </nobr></td>
+                        </tr>            
+                    </table>                    
+                </td>
+            </tr>
+        </table>
+    </div>    
+</body>
+<script src="stats.js"></script>
+
+<script>
+    $(function () {        
+        setTimeout(function () {
+            var elem = $("#statsPlayerEl");
+            var vm = new StatsVM();
+            ko.applyBindings(vm, elem[0]);
+        }, 15);
+    }); 
+</script>
+    
+</html>

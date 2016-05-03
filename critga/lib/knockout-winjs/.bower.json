@@ -1,0 +1,37 @@
+{
+  "name": "knockout-winjs",
+  "main": "js/knockout-winjs.js",
+  "homepage": "https://github.com/winjs/knockout-winjs",
+  "authors": [
+    "Microsoft Corporation and other contributors"
+  ],
+  "description": "Project to smooth the Knockout/WinJS interaction",
+  "keywords": [
+    "WinJS",
+    "knockout"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "bin",
+    "dist",
+    "package.json",
+    "*.nuspec",
+    "Gruntfile.js"
+  ],
+  "version": "2.4.0",
+  "_release": "2.4.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.4.0",
+    "commit": "efb75b1102316077c45b12a2f7dc728e50ddb62e"
+  },
+  "_source": "https://github.com/winjs/knockout-winjs.git",
+  "_target": "^2.4.0",
+  "_originalSource": "knockout-winjs",
+  "_direct": true
+}

@@ -1,0 +1,29 @@
+/*
+Copyright (c) Microsoft Corporation. All rights reserved
+*/
+body {
+	font-size:1.5em;
+}
+
+H1,span  {
+	font-size:1.53em;
+}
+H2, H2.win-type-subheader {
+	font-size:1.51em;
+	font-weight: bold;
+	padding-bottom: 2px;
+}
+
+button {
+	font-size:1.51em;
+}
+input{
+	font-size:1.5em;
+}
+.win-hub-section-header-wrapper .win-hub-section-header-chevron {
+	display:none;
+}
+
+.hubContent {
+   min-width: 320px;
+}
